@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Googlepays</h1>
+
+<div id="googlepays">
+  <% @googlepays.each do |googlepay| %>
+    <%= render googlepay %>
+    <p>
+      <%= link_to "Show this googlepay", googlepay %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New googlepay", new_googlepay_path %>

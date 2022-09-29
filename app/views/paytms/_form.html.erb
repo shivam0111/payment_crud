@@ -1,0 +1,17 @@
+<%= form_with(model: paytm) do |form| %>
+  <% if paytm.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(paytm.errors.count, "error") %> prohibited this paytm from being saved:</h2>
+
+      <ul>
+        <% paytm.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

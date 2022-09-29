@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @netbanking %>
+
+<div>
+  <%= link_to "Edit this netbanking", edit_netbanking_path(@netbanking) %> |
+  <%= link_to "Back to netbankings", netbankings_path %>
+
+  <%= button_to "Destroy this netbanking", @netbanking, method: :delete %>
+</div>

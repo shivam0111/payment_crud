@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @paytm %>
+
+<div>
+  <%= link_to "Edit this paytm", edit_paytm_path(@paytm) %> |
+  <%= link_to "Back to paytms", paytms_path %>
+
+  <%= button_to "Destroy this paytm", @paytm, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Paytms</h1>
+
+<div id="paytms">
+  <% @paytms.each do |paytm| %>
+    <%= render paytm %>
+    <p>
+      <%= link_to "Show this paytm", paytm %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New paytm", new_paytm_path %>

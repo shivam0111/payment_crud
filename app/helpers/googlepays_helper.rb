@@ -1,0 +1,2 @@
+module GooglepaysHelper
+end

@@ -1,0 +1,2 @@
+module PaytmsHelper
+end

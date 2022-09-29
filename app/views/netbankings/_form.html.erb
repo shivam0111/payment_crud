@@ -1,0 +1,17 @@
+<%= form_with(model: netbanking) do |form| %>
+  <% if netbanking.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(netbanking.errors.count, "error") %> prohibited this netbanking from being saved:</h2>
+
+      <ul>
+        <% netbanking.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @googlepay %>
+
+<div>
+  <%= link_to "Edit this googlepay", edit_googlepay_path(@googlepay) %> |
+  <%= link_to "Back to googlepays", googlepays_path %>
+
+  <%= button_to "Destroy this googlepay", @googlepay, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+class Netbanking < ApplicationRecord
+end

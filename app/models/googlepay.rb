@@ -1,0 +1,2 @@
+class Googlepay < ApplicationRecord
+end
